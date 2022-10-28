@@ -59,14 +59,14 @@ function procesar_img(){
 
 // Funciones externas
 
-// Ejercicio 1
+// Ejercicio 3
 
-function calcular() {
-    let numero1 = parseInt(document.getElementById("num1").value);
-    let numero2 = parseInt(document.getElementById("num2").value);
-    let operador = (document.getElementById("ope").value);
+function tabla() {
+    let multi = document.getElementById("multi").value;
+    multi = parseInt(multi);
 
-    let resultado = (document.getElementById("resul"));
-    
-    resultado.value = operaciones_logicas(numero1, numero2, operador);
+    for (var i = 1; i <= 10; i++) {
+        multiplicacion = multi * i;
+        document.write(multi + "x" + i + "=" + multiplicacion + "<br>");
+    }
 }
