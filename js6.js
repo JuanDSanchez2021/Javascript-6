@@ -1,30 +1,28 @@
-// Funciones internas
+/* CALCULADORA */
+function calcular() {
+    let num = parseInt(document.getElementById("num").value);
+    let num2 = parseInt(document.getElementById("num2").value);
+    let operacion = document.getElementById("operacion").value;
+    let resul= document.getElementById("resul");
 
-// Funcion Ejercicio 1
-
-function operaciones_logicas(numero1, numero2, operador){
     let total = 0;
-    if (operador == '+' || operador == 'SUMA') {
-        total = numero1 + numero2;
-        return total
+    
+    if (operacion == "+") {
+        total = num + num2;
+
+    } 
+    else if (operacion == "-"){
+        total = num - num2;
     }
-    else if (operador == '-' || operador == 'RESTA') {
-        total = numero1 - numero2;
-        return total;
-    }
-    else if (operador == '*' || operador == 'MULTIPLICACION') {
-        total = numero1 * numero2;
-        return total;
-    }
-    else if (operador == '/' || operador == 'DIVISION') {
-        total = numero1 / numero2;
-        return total;
-    }
+    else if (operacion == "x"){
+        total = num * num2;
+    } 
     else {
-        total = 'Operacion fallida, vuelva a intentarlo';
-        return total;
+        total = num / num2;
     }
-};
+
+    resul.value = total;
+}
 
 // Funcion Ejercicio 2
 
