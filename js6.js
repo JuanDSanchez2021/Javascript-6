@@ -57,6 +57,7 @@ function procesar_img(){
 
 // Funciones externas
 
+
 // Ejercicio 3
 
 function tabla() {
